@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.current-weather {
+  text-align: center;
+}
+
+.temperature {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.temperature-icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  transform: rotateY(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.daily-forecast {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.day-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.day-forecast {
+  display: inline-block;
+  width: 100px;
+  margin: 0 10px;
+  text-align: center;
+  transform: perspective(500px) rotateX(20deg);
+  transition: transform 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.day-forecast:hover {
+  transform: perspective(500px) rotateX(0);
+}
+
+.day-forecast .day {
+  font-weight: bold;
+}
+
+.day-forecast .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.hourly-forecast {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hourly-forecast-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hourly-forecast-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.hourly-forecast-item:last-child {
+  border-bottom: none;
+}

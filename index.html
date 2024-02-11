@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="search-container">
+      <input type="text" id="cityInput" placeholder="Buscar ciudad...">
+      <button onclick="searchWeather()">Buscar</button>
+    </div>
+    <div class="current-weather" id="currentWeather">
+      <!-- Aquí se mostrará la información del tiempo actual -->
+    </div>
+    <div class="daily-forecast" id="dailyForecast">
+      <!-- Aquí se mostrará el pronóstico diario -->
+    </div>
+    <ul class="hourly-forecast" id="hourlyForecast">
+      <!-- Aquí se mostrará el pronóstico por horas -->
+    </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
